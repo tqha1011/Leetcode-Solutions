@@ -25,16 +25,16 @@
  * }
  */
 class Solution {
-    fun btree(root : TreeNode? , result : MutableList<Int>){
+    fun inorder(root : TreeNode? , result : MutableList<Int>){
         if(root!= null){
-            btree(root.left,result)
+            inorder(root.left,result)
             result.add(root.`val`)
-            btree(root.right,result)
+            inorder(root.right,result)
         }
     }
     fun inorderTraversal(root: TreeNode?): List<Int> {
         val result = mutableListOf<Int>()
-        btree(root,result)
+        inorder(root,result)
         return result
     }
 }
