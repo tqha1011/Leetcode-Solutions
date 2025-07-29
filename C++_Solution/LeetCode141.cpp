@@ -16,6 +16,16 @@
     - If we encounter a node whose address is already in the set, we return true (cycle detected).
 */
 
+
+#include <iostream>
+#include <set>
+using namespace std;
+struct ListNode {
+    int val;
+    ListNode *next;
+    ListNode(int x) : val(x), next(NULL) {}
+ };
+ 
 class Solution {
 public:
     bool hasCycle(ListNode *head) {
