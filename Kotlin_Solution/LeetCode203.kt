@@ -2,7 +2,7 @@
     Problem -203. Remove Linked List Elements - Easy
     Given the head of a linked list and an integer val
 
-    Goal:
+    🎯 Goal:
     - Remove all the nodes of the linked list that has Node.val == val
     - Return the newHead
 
@@ -15,7 +15,7 @@
     Techniques : Remove in linked list
     Time Complexity : O(n)
     Space Complexity : O(1)
-    Main idea : Create dummy node - link to the head of list
+    ✅ Main idea : Create dummy node - link to the head of list
                 - Create node cur (link to dummy) to traverse the list
                 - If cur.next.val = val , cur.next = cur.next.next
  */
